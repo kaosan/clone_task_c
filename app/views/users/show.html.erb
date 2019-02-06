@@ -1,14 +1,12 @@
 <div class="container">
+<div class="t_menu">
 
 <br><%= image_tag @user.icon, class: 'icon' %>
 <h1><%= @user.name %>のページ</h1>
 <p><%= notice %></p>
-<h3>お気に入りした投稿</h3>
-  <% @user.favorite_images.each do |image| %>
-    <br>投稿者:<%= image.user.name %>
-    <br><%= image_tag image.image, class: 'img-responsive' %>
-    <br>コメント:<%= image.content %>
-    <% end %>
 <br>
-<%= link_to "編集", edit_user_path, class: 'botton' %>
+<li><%= link_to "編集", edit_user_path, class: 'botton' %></li>
+<br>
+<li><%= link_to "お気に入り", favorites_path, class: 'b_botton' %></li>
+</div>
 </div>

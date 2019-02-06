@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :contacts
   root to: 'images#top'
-  resources :favorites, only:[:create, :destroy]
+  resources :favorites, only:[:create, :destroy, :index]
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   resources :images do

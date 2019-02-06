@@ -1,4 +1,6 @@
 <div class="container">
+<div class="t_menu" >
+
 <h1>投稿詳細画面</h1>
 
 <p><%= image_tag @image.image.url, class: 'img-responsive center-block' %></p>
@@ -12,5 +14,6 @@
       <% end %>
       <br>
 
-      <%= link_to "ブログ一覧画面に戻る", images_path, class:'back_show' %>
+      <%= link_to "投稿一覧画面に戻る", images_path, class:'back_show' %>
+</div>
 </div>

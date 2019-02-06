@@ -13,7 +13,7 @@
 
   <div class="filed">
     <%= form.label :画像 %>
-    <%= image_tag(@image.image.url) if @image.image.url %>
+    <%= image_tag(@image.image.url, class: 'img-responsive') if @image.image.url %>
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
   </div>

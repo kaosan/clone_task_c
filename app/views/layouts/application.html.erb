@@ -30,6 +30,9 @@
             <a><%= link_to '投稿画面へ', new_image_path %></a>
           </li>
           <li>
+            <a><%= link_to 'お気に入り画面へ', favorites_path %></a>
+          </li>
+          <li>
             <a><%= link_to "ログアウト", session_path(current_user.id), method: :delete %></a>
           </li>
         <% else %>

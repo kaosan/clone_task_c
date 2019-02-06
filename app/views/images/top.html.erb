@@ -17,16 +17,20 @@
   </li>
   <br>
   <li>
-    <a><%= link_to "ログアウト", session_path(current_user.id), method: :delete, class: 'b_botton' %></a>
+    <a><%= link_to 'お気に入り', favorites_path, class: 'b_botton' %></a>
+  </li>
+  <br>
+  <li>
+    <a><%= link_to "ログアウト", session_path(current_user.id), method: :delete, class: 'a_botton' %></a>
   </li>
 <% else %>
 <br>
   <li>
-    <a><%= link_to "登録", new_user_path, class: 'a_botton' %></a>
+    <a><%= link_to "登録", new_user_path, class: 'b_botton' %></a>
   </li>
   <br>
   <li>
-    <a><%= link_to "ログイン", new_session_path, class: 'b_botton' %></a>
+    <a><%= link_to "ログイン", new_session_path, class: 'a_botton' %></a>
   </li>
 <% end %>
 </div>
