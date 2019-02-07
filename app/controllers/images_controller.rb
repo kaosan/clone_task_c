@@ -37,7 +37,7 @@ end
 
 def update
   if @image.update(image_params)
-    redirect_to images_path, notice: 'ブログを編集しました'
+    redirect_to images_path, notice: '投稿を編集しました'
   else
     render 'edit'
   end
@@ -45,7 +45,7 @@ end
 
 def destroy
   @image.destroy
-  redirect_to images_path, notice: 'ブログを削除しました'
+  redirect_to images_path, notice: '投稿を削除しました'
 end
 
 def confirm
