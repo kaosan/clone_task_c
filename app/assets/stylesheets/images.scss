@@ -55,8 +55,8 @@ h1{
 }
 
 .img-responsive{
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   height: 30%;
   width:auto;
 }
@@ -125,4 +125,9 @@ h1{
 
 .filed{
   text-align: center;
+}
+
+.mx-auto{
+  width: 200px;
+  margin: 0 auto;
 }

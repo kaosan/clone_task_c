@@ -36,9 +36,12 @@
   </div>
 <br>
 <div class="user_edit" >
+  <div class ="mx-auto" style ="width: 200px;">
   <%= form.label :ユーザー画像 %>
   <%= form.file_field :icon %>
 </div>
+</div>
+<br>
   <%= form.submit "編集", class: 'a_botton' %>
   <%= link_to "戻る", user_path, class: 'b_botton' %>
 <% end %>

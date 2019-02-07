@@ -44,4 +44,5 @@ class IconUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  # オリジナル画像を横幅600pxに制限して保存する。
 end

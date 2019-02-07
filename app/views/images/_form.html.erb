@@ -14,9 +14,12 @@
 
   <div class="filed">
     <%= form.label :画像 %>
-    <%= image_tag(@image.image.url, class: 'img-responsive') if @image.image.url %>
+    <%= image_tag(@image.image.url, class: 'img-responsive center-block') if @image.image.url %>
+    <div class ="mx-auto" style ="width: 200px;">
+
     <%= form.file_field :image %>
     <%= form.hidden_field :image_cache %>
+  </div>
   </div>
   <br>
   <div class="image_title">
