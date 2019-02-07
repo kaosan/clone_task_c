@@ -1,4 +1,5 @@
 <div class = "container">
+<div class="t_menu">
 
 <%= form_with(model: @user, local: true ,url: new_or_edit ) do |form| %>
   <% if @user.errors.any? %>
@@ -41,4 +42,5 @@
   <%= form.submit "編集", class: 'a_botton' %>
   <%= link_to "戻る", user_path, class: 'b_botton' %>
 <% end %>
+</div>
 </div>

@@ -1,3 +1,4 @@
+<div class="t_menu">
 <%= form_with(model: @image, local: true, url:choose_new_or_edit) do |form| %>
   <% if @image.errors.any? %>
     <div id="error_explanation">
@@ -25,4 +26,6 @@
   <br>
   <%= form.submit "送信", class: 'botton' %>
 <% end %>
+<br>
 <%= link_to "投稿一覧画面にもどる", images_path %>
+</div>

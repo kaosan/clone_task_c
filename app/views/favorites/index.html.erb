@@ -1,7 +1,9 @@
 <p><%= notice %></p>
+<div class ="t_menu">
 <h1>お気に入り一覧</h1>
   <% @user.favorite_images.each do |image| %>
     <br>投稿者:<%= image.user.name %>
     <br><%= image_tag image.image, class: 'img-responsive' %>
     <br>コメント:<%= image.content %>
     <% end %>
+</div>
